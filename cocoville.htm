@@ -35,7 +35,7 @@ button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
 
-div.accordionpanel {
+div.panel{
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -60,8 +60,11 @@ div.accordionpanel {
 
 <p><em>Alhamdulillah</em>, under this scheme we have already sold three projects, one at Old Madras Road and two other projects in Bannerghatta Road, Bangalore. Please refer <strong>history of Halal Hosuing projects</strong> below. Our mission is to create more and more such projects, that will make housing affordable, simple and enjoyable. Allah has helped us to start our fourth project in parallel <strong>Cocoville @ Bannerghatta Road, Bangalore</strong>.</p>
 <button class="accordion">Highlights</button>
-<div class="accordionpanel">      
-<p>Basic cost only Rs. 2690 per sqft</p>
+<div class="panel">      
+<p><li>Basic cost only Rs. 2690 per sqft</li>
+<li>Interest Free EMI as low as Rs.41 sqft&nbsp;</li>
+<li>Four years to pay entire amount in offerdable interest free EMIS</li>
+<li>Earn rental income from third year.</li></p>
 </div>
 
 <h2><a id="project-summary" class="anchor" href="#project-summary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Summary</h2>
@@ -501,7 +504,22 @@ c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a
 
         <span class="site-footer-credits">Halal Housing - A Concept by <a href="#">Halal Venturez</a></span>
       </footer>
-
     </section>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
   </body>
 </html>
