@@ -55,7 +55,9 @@ a {
 
 .page-header { 
   color: #fff;
-  text-align: center;}
+  text-align: center;
+  background-color: #159957;
+  background-image: url(images/cocovilleimage1.jpg) repeat, linear-gradient(120deg, #155799, #159957); }
 
 @media screen and (min-width: 64em) {
   .page-header {
