@@ -53,8 +53,7 @@ a {
       margin-top: 1rem;
       margin-left: 0; } }
 
-.page-header {
-  color: #fff;
+.page-header { 
   text-align: center;}
 
 @media screen and (min-width: 64em) {
